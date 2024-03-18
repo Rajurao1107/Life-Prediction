@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<style>
+  body {
+    background: #440000;
+    color: yellow;
+    margin: 0px;
+  }
+
+  #con {
+    position: relative;
+    text-align: center;
+  }
+
+  input {
+    position: relative;
+    width: 30%;
+    height: 30px;
+    text-align: center;
+    outline: none;
+    border: 1px solid white;
+    background: #440000;
+    color: #4FFF70;
+    border-radius: 5px;
+  }
+
+  button {
+    position: relative;
+    width: 30%;
+    height: 40px;
+    border-radius: 10px;
+    background: #4FFF70;
+    border: hidden;
+  }
+
+  select {
+    position: relative;
+    width: 15%;
+    height: 33px;
+    text-align: center;
+    border: 1px solid white;
+    outline: none;
+    color: #4FFF70;
+    background: #440000;
+    border-radius: 5px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  img {
+    position: relative;
+    width: 100%;
+  }
+
+  #opt1 {
+    position: relative;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    border: 1px solid white;
+    outline: none;
+    color: #4FFF70;
+    background: #440000;
+    border-radius: 5px;
+  }
+
+  #opt2 {
+    position: relative;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    border: 1px solid white;
+    outline: none;
+    color: #4FFF70;
+    background: #440000;
+    border-radius: 5px;
+  }
+
+  #text {
+    font-size: 20px;
+  }
+</style>
+
+<body>
+
+  <form id="con" method="post" action="" name="contact-form">
+
+    <h2>FIRST MAKE YOUR BIRTH CHART</h2>
+    <input type="text" id="name" placeholder="Name" name="NAME">
+    <p>BIRTH PLACE</p>
+    <input type="text" id="district" placeholder="District" name="DISTRICT">
+    <input type="text" id="state" placeholder="State" name="STATE">
+    <p>BIRTH TIME</p>
+    <input type="text" id="hour" placeholder="Hour" name="HOUR">
+    <input type="text" id="minute" placeholder="Minute" name="MINUTE">
+    <select name="DURATION" id="duration">
+      <option value="am">AM</option>
+      <option value="pm">PM</option>
+    </select>
+    <p>BIRTH DAY</p>
+    <input type="text" id="day" placeholder="DD" name="DAY">
+    <input type="text" id="month" placeholder="MM" name="MONTH">
+    <input type="text" id="year" placeholder="YYYY" name="YEAR"><br><br>
+    <button onclick="birthChart()" value="submit">CREATE</button>
+
+  </form>
+  <br><img src="" alt="" id="image"><br>
+  <div id="con">
+    <p id="text"></p>
+    <h1>KUNDLI</h1>
+    <select id="opt2">
+      <option>Select Planet</option>
+      <option value="sun">sun</option>
+      <option value="moon">moon</option>
+      <option value="mercury">mercury</option>
+      <option value="venus">venus</option>
+      <option value="mars">mars</option>
+      <option value="jupiter">jupiter</option>
+      <option value="saturn">saturn</option>
+      <option value="rahu">rahu</option>
+      <option value="ketu">ketu</option>
+    </select>
+    <br><br>
+    <select id="opt1">
+      <option>Select house</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+    <br><br>
+    <button onclick="touchmenow()">CLICK</button>
+    <br><br>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
