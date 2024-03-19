@@ -65,6 +65,34 @@ function birthChart() {
   else if (hour.value == "9" && b.value == "am") {
     hour.value = "09";
   }
+  if (hour.value == "01" && b.value == "am") {
+    hour.value = "01";
+  }
+  else if (hour.value == "02" && b.value == "am") {
+    hour.value = "02";
+      }
+  else if (hour.value == "03" && b.value == "am") {
+    hour.value = "03";
+      }
+  else if (hour.value == "03" && b.value == "am") {
+    hour.value = "03";
+      }
+  else if (hour.value == "04" && b.value == "am") {
+    hour.value = "04";
+      }
+  else if (hour.value == "05" && b.value == "am") {
+    hour.value = "05";
+      }
+  else if (hour.value == "06" && b.value == "am") {
+    hour.value = "07";
+      }
+  else if (hour.value == "08" && b.value == "am") {
+    hour.value = "08";
+      }
+  else if (hour.value == "09" && b.value == "am") {
+    hour.value = "09";
+      }
+  
   if (minute.value == "1") {
     minute.value = "01";
   }
