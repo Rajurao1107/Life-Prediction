@@ -38,6 +38,34 @@ function birthChart() {
   else if (hour.value == "11" && b.value == "pm") {
     hour.value = "23";
   }
+  if (hour.value == "01" && b.value == "pm") {
+    hour.value = "13";
+  }
+  else if (hour.value == "02" && b.value == "pm") {
+    hour.value = "14";
+  }
+  else if (hour.value == "03" && b.value == "pm") {
+    hour.value = "15";
+  }
+  else if (hour.value == "04" && b.value == "pm") {
+    hour.value = "16";
+  }
+  else if (hour.value == "05" && b.value == "pm") {
+    hour.value = "17";
+  }
+  else if (hour.value == "06" && b.value == "pm") {
+    hour.value = "18";
+  }
+  else if (hour.value == "07" && b.value == "pm") {
+    hour.value = "19";
+  }
+  else if (hour.value == "08" && b.value == "pm") {
+    hour.value = "20";
+  }
+  else if (hour.value == "09" && b.value == "pm") {
+    hour.value = "21";
+  }
+  
   if (hour.value == "1" && b.value == "am") {
     hour.value = "01";
   }
@@ -65,33 +93,6 @@ function birthChart() {
   else if (hour.value == "9" && b.value == "am") {
     hour.value = "09";
   }
-  if (hour.value == "01" && b.value == "am") {
-    hour.value = "01";
-  }
-  else if (hour.value == "02" && b.value == "am") {
-    hour.value = "02";
-      }
-  else if (hour.value == "03" && b.value == "am") {
-    hour.value = "03";
-      }
-  else if (hour.value == "03" && b.value == "am") {
-    hour.value = "03";
-      }
-  else if (hour.value == "04" && b.value == "am") {
-    hour.value = "04";
-      }
-  else if (hour.value == "05" && b.value == "am") {
-    hour.value = "05";
-      }
-  else if (hour.value == "06" && b.value == "am") {
-    hour.value = "07";
-      }
-  else if (hour.value == "08" && b.value == "am") {
-    hour.value = "08";
-      }
-  else if (hour.value == "09" && b.value == "am") {
-    hour.value = "09";
-      }
   
   if (minute.value == "1") {
     minute.value = "01";
